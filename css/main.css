@@ -15,6 +15,12 @@ body {
 	text-align: center;
 	padding: 0px 20px 0px 20px;
 	border-top: 4px solid #333;
+	/*background-image: url('/images/blog/bg2.jpg');*/
+	/*background-size: 100% 100%;*/
+    /*background-repeat: no-repeat;*/
+	/*background-image: url('http://wpexplorer-demos.com/fabulous/wp-content/themes/wpex-fabulous/images/noise.png');*/
+
+
 /*
 background-color: #F7F7F7;
 background-image: url('http://wpexplorer-demos.com/fabulous/wp-content/themes/wpex-fabulous/images/noise.png');
@@ -135,7 +141,7 @@ h1 {
 }
 
 #posts ul li {
-	margin: 0px 20px 20px 0px;
+	margin: 20px 20px 20px 20px;
 	width: 250px;
 	float: left;
 	border-radius: 3px;

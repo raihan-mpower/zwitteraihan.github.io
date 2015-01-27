@@ -1,9 +1,9 @@
 permalink: /:categories/:title.html
 url: "http://pasindud.github.io/jekyll-masonry/"
 full_name: "Your Full Name"
-first_name: "First Name"
+first_name: "Raihan"
 last_name: "Last Name"
-blog_title: "Blog title "
+blog_title: "Bangladesh On My Own"
 author_img_name_path: "/images/users/user.jpg"
 disqus_shortname: "pasinduland"
 copyright_year: "2014"

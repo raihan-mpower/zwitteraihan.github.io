@@ -36,7 +36,7 @@
 		<div id='content'>
 			<div id='posts'>
 				<ul>
-					{% for post in site.categories.blog %}
+					{% for post in site.categories.blog reversed %}
 						<li class='post'>
 							{% if post.image %}
 								<a href='{{post.url}}'><img class='post-image' src="{{post.image}}" /></a>
@@ -45,7 +45,7 @@
 					<a href='{{post.url}}'><h1 class='post-title'>{{post.title}}</h1></a>
 								<div class='post-date'>{{ post.date | date: "%B %d, %Y"}}</div>
 								
-								<div class='post-content'>{{post.summary}}</div>
+								<div class='post-content'><h4>{{post.summary}}</h4></div>
 							</div>
 						</li>
 					{% endfor %}

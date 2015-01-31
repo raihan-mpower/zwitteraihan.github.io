@@ -197,6 +197,7 @@ margin: 20px 5px 0px 0px;
 }
 
 #side-bar #user-pic{
+	box-shadow: 0 0px 0px #cccccc;
 	width: 80px;
 	height: 80px;
 }
@@ -210,9 +211,27 @@ margin: 20px 5px 0px 0px;
 
 	margin: 20px 0px 0px 0px;
 }
+#side-bar #user-name{
+	font-size: 12px;
+	margin: 5px 0px 0px 0px;
+}
+#side-bar #briefroute{
+	background-color: #CECECE;
+	box-shadow: 0 1px 1px #cccccc;
+	font-size: 12px;
+	font-style: 'bold';
+	width :95%;
+	margin: 5px 0px 0px 0px;
+	float: left;
+	padding: 10px;
+}
 
-#side-bar #date {
-	font-size: 11px;
+#side-bar #map-canvas {
+	padding: 10px;
+width: 95%;
+height: 250px;
+float: left;
+margin: 20px 5px 0px 0px;
 }
 
 #page-title {

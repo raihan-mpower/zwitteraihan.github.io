@@ -1,14 +1,40 @@
 <html>
 	<head>
+
 		<meta name="viewport" id="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" type="text/css" href="/css/socialicious.css">
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
 		<link rel="stylesheet" type="text/css" href="/css/monokai.css">
+		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
 		<link href="/blog/rss.xml" rel="alternate" type="application/rss+xml" title="{{site.blog_title}}" />
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<title>{{page.title}} - {{ site.blog_title }}</title>
 		<script type="text/javascript" src='/js/highlight.pack.js'></script>
 		<script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+		<script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map-canvas');
+        var mapOptions = {
+          center: new google.maps.LatLng({{page.longitude}}, {{page.lattitude}}),
+          zoom: 15,          
+          mapTypeControl: true,
+    		mapTypeControlOptions: {
+      		style: google.maps.MapTypeControlStyle.DROPDOWN_MENU
+    		},
+    		zoomControl: true,
+		    zoomControlOptions: {
+		      style: google.maps.ZoomControlStyle.SMALL
+		    }
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+        var marker = new google.maps.Marker({
+  					position: new google.maps.LatLng({{page.longitude}}, {{page.lattitude}}),
+  					map: map,
+  					icon:  '/images/marker.png'
+						});
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
 	</head>
 	<body>
 		<div id='layout'>
@@ -36,6 +62,12 @@
 					{% for tag in page.tags %}
 						<div> <span class='tag {{tag | downcase }}'>{{tag}}</span> </div>
 					{% endfor %}
+				</div>
+				<div id="map-canvas">
+				</div>
+				<div id = 'briefroute'>
+					<h3>Route</h3>
+					<h4>{{page.route}}</h4>
 				</div>
 			</div>
 			<div id='page'>

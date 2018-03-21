@@ -1,10 +1,10 @@
 ---
 layout: blog
-title: Whoa that's a big House !!!
+title: Dhuppanichora.
 category: blog
 tags: [tags for the post, is here]  
-summary: a trip to the past , Baliati palace - manikganj . 
-image: /images/blog/baliaticover.jpg
+summary: Dhuppanichora Waterfall, Rangamati
+image: /images/blog/17819040_437874413239935_4921784495444590592_n.jpg
 longitude: 25.251558
 lattitude: 91.054001
 route: will post soon

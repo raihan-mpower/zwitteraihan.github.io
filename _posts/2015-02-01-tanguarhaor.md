@@ -1,10 +1,10 @@
 ---
 layout: blog
-title: The adventure that started it all.
+title: dhuppanichora.
 category: blog
 tags: [tags for the post, is here]  
-summary: A Random Trip to Tanguar Haor
-image: /images/blog/tanguarcover.jpg
+summary: Dhuppanichora Waterfall
+image: /images/blog/17819040_437874413239935_4921784495444590592_n.jpg
 longitude: 25.251558
 lattitude: 91.054001
 route: will post soon
